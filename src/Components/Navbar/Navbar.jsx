@@ -1,8 +1,15 @@
 // import { useContext } from "react";
 // import { CurrencyContext } from "../../Context/CurrencyContext";
+import { useNavigate } from "react-router-dom";
 import Store from "../../State/Store";
 
 function Navbar() {
+
+    const navigate = useNavigate()
+
+    function goToHome(){
+        navigate("/")
+    }
 
     // const {setCurrency} = useContext(CurrencyContext) **THIS IS A WAY FOR USING CONTEXT STATE MMANAGEMENT BUT USING ZUSTAND WE CAN MAKE THING MORE EASY FOR US
 
@@ -36,7 +43,7 @@ function Navbar() {
                         </ul>
                     </div>
                 </div>
-                <div className="navbar-center">
+                <div onClick={goToHome} className="navbar-center">
                     <a className="btn btn-ghost text-xl">Crypto Watcher</a>
                 </div>
                 <div className="navbar-end">
