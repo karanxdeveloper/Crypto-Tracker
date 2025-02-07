@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { fetchCoinDetails } from "../Services/FetchCoinDetails";
 import parse from 'html-react-parser'
 import Store from "../State/Store";
+import MyLoader from "../Components/PageLoader/Loader"
 
 function CoinDetailsPage(){
 
@@ -23,7 +24,7 @@ function CoinDetailsPage(){
 
      if(isLoading){
         console.log("loading")
-        return <div>Loading</div>
+        return <MyLoader/>
      }
      if(isError){
         return <div>Error: Something went wrong</div>

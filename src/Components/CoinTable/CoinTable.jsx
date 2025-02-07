@@ -5,6 +5,8 @@ import { useQuery } from "@tanstack/react-query";
 
 import Store from "../../State/Store"
 import { useNavigate } from "react-router-dom";
+// import MyLoader from "../PageLoader/Loader"
+import MyLoader2 from "../PageLoader/SecondLoader"
 
 function CoinTable() {
 
@@ -25,6 +27,10 @@ function CoinTable() {
 
     function handleCoinRedirect(id){
         navigate(`/details/${id}`)
+    }
+
+    if(isLoading){
+        return <MyLoader2/>
     }
 
 
