@@ -35,7 +35,7 @@ function CoinDetailsPage(){
 
 
     return(
-            <div className="flex flex-col justify-center items-center lg:flex-row p-3 gap-2">
+            <div className="flex flex-col justify-center items-center lg:flex-row p-3 gap-2 select-none">
                 <div className="w-[100vw] lg:w-[33vw]  h-[90vh]  border-r items-center border-grey-400 flex flex-col">
 
                     <img 

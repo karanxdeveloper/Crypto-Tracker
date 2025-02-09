@@ -43,7 +43,7 @@ function CoinTable() {
 
     return (
         <>
-            <div className="my-5 flex flex-col items-center justify-center gap-5 w-[100vw] mx-auto md:w-[80vw]">
+            <div className="my-5 flex flex-col items-center justify-center gap-5 w-[100vw] mx-auto md:w-[80vw] select-none">
                 <div className="w-[100%] bg-yellow-400 text-black flex gap-1 py-4 px-2 font-semibold items-center md:w-[80vw]">
                     <div className="basis-[25%]  flex justify-center items-center ">
                         coin
