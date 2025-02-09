@@ -64,7 +64,7 @@ function CoinTable() {
                     {data && data.map((coin) => {
                         return (
                             <div onClick={()=>{handleCoinRedirect(coin.id)}} key={coin.id}
-                             className="w-full bg-blue-300 cursor-pointer  text-white flex py-4 px-2 font-semibold items-center md:justify-between ">
+                             className="w-full  cursor-pointer  text-white flex py-4 px-2 font-semibold items-center md:justify-between ">
 
                                 <div className="flex items-center justify-start gap-3    md:basis-[25%]">
 
