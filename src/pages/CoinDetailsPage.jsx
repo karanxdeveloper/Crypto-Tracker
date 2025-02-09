@@ -5,6 +5,7 @@ import { fetchCoinDetails } from "../Services/FetchCoinDetails";
 import parse from 'html-react-parser'
 import Store from "../State/Store";
 import MyLoader from "../Components/PageLoader/Loader"
+import CoinInfoContainer from "../Components/CoinInfo/CoinInfoContainer";
 
 function CoinDetailsPage(){
 
@@ -34,8 +35,8 @@ function CoinDetailsPage(){
 
 
     return(
-            <div className="flex p-3 gap-2 ">
-                <div className="w-[33vw]  h-[90vh]  border-r items-center border-green-400 rounded-md flex flex-col">
+            <div className="flex flex-col justify-center items-center lg:flex-row p-3 gap-2">
+                <div className="w-[100vw] lg:w-[33vw]  h-[90vh]  border-r items-center border-grey-400 flex flex-col">
 
                     <img 
                      src={coin?. image ?. large}
@@ -79,8 +80,8 @@ function CoinDetailsPage(){
 
                 </div>
 
-                <div>
-                    <h2>second row </h2>
+                <div className="w-full lg:w-[66vw] lg:h-full"> 
+                   <CoinInfoContainer coinId={coinId}/>
                 </div>
 
             </div>
